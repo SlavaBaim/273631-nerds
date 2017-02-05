@@ -49,3 +49,10 @@ body {
 	background-color: #eee;
 }
 
+.slider {
+	width: 1160px;
+	margin: 0 auto;
+
+	height: 430px;
+}
+
