@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс-catalog</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 	<header class="main-header">
-		<div class="container">
-			<div class="header-top clearfix">
-				<div class="logo">
+		<div class="container clearfix">
+			<div class="header-top">
+				<div class="logo-top">
 					<a class="logo" href="index.html" title="логотип Нёрдс">
 					<img src="img/logo.png" alt="логотип Нёрдс" width="160" height="65">
 					</a>
 				</div>
-				<nav class="main-navigation">
+				<nav class="main-menu">
 					<ul>
 						<li>
 						<a href="#">Студия</a>
@@ -33,13 +34,11 @@
 					<a class="basket" href="#">Корзина</a>
 				</div>
 			</div>
-		</div>
-		<div class="welcome">
-			<p>Магазин готовых шаблонов</p>
+				<p class="welcome">Магазин готовых шаблонов</p>
 		</div>
 	</header>
 	<main class="main-catalog">
-		<div class="container">
+		<div class="container clearfix">
 			<div class="search">
 				<form action="" method="post">
 					<div class="range">
@@ -100,51 +99,53 @@
 						<a class="up" href="#"></a>
 					</div>
 				</div>
-			</div>
-			<div class="catalog">
-				<article class="catalog-item">
-					<a class="product" href="#">
-						<img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт отличного городка Седона">
-					</a>
-				</article>
-				<article class="catalog-item">
-					<a class="product" href="#">
-						<img src="img/img-pink.jpg" width="360" height="576" alt="Сайт об приложении Pink">
-					</a>
-				</article>
-				<article class="catalog-item">
-					<a class="product" href="#">
-						<img src="img/img-barbershop.jpg" width="360" height="576" alt="Отличный сайт-визитка барбершопа Бородинский">
-					</a>
-				</article>
-				<article class="catalog-item">
-					<a class="product" href="#">
-						<img src="img/img-mishka.jpg" width="360" height="576" alt="Интернет-магазин Mishki">
-					</a>
-				</article>
-				<article class="catalog-item">
-					<a class="product" href="#">
-						<img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт для учебного заведения">
-					</a>
-				</article>
-				<article class="catalog-item">
-					<a class="product" href="#">
-						<img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт для производителя кваса">
-					</a>
-				</article>
-			</div>
-			<div class="paginator">
-				<a class="active">1</a>
-				<a href="#2">2</a>
-				<a href="#3">3</a>
-				<a href="#">Следующая</a>
+				<div class="catalog">
+					<div class="grid">
+					<article class="catalog-item col_2">
+						<a class="product" href="#">
+							<img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт отличного городка Седона">
+						</a>
+					</article>
+					<article class="catalog-item col_2">
+						<a class="product" href="#">
+							<img src="img/img-pink.jpg" width="360" height="576" alt="Сайт об приложении Pink">
+						</a>
+					</article>
+					<article class="catalog-item col_2">
+						<a class="product" href="#">
+							<img src="img/img-barbershop.jpg" width="360" height="576" alt="Отличный сайт-визитка барбершопа Бородинский">
+						</a>
+					</article>
+					<article class="catalog-item col_2">
+						<a class="product" href="#">
+							<img src="img/img-mishka.jpg" width="360" height="576" alt="Интернет-магазин Mishki">
+						</a>
+					</article>
+					<article class="catalog-item">
+						<a class="product" href="#">
+							<img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт для учебного заведения">
+						</a>
+					</article>
+					<article class="catalog-item">
+						<a class="product" href="#">
+							<img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт для производителя кваса">
+						</a>
+					</article>
+					</div>
+				</div>
+				<div class="paginator">
+					<a class="active">1</a>
+					<a href="#2">2</a>
+					<a href="#3">3</a>
+					<a href="#">Следующая</a>
+				</div>
 			</div>
 		</div>
 	</main>
-	<footer>
-		<div class="footer-contacts">
+	<footer class="main-footer">
+		<div class="footer-top">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123732!2d30.320894615727163!3d59.93879686904833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1472545371340" allowfullscreen style="border:0"></iframe>
-			<div class="container-contacts">
+			<div class="container">
 				<div class="contacts">
 					<h3>Nёrd's design studio</h3>
 					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
@@ -153,11 +154,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer-bottom">
+		<div class="footer-bottom container clearfix">
 			<div class="footer-social">
-				<a class="class="social social-vk" href="#"></a>
-				<a class="class="social social-fb" href="#"></a>
-				<a class="class="social social-inst" href="#"></a>
+				<a class="class="social social-vk" href="#">В контакт</a>
+				<a class="class="social social-fb" href="#">Фейсбук</a>
+				<a class="class="social social-inst" href="#">Инстаграмм</a>
 			</div>
 			<div class="footer-text">
 				<h2>Давайте дружить, это выгодно!</h2>
